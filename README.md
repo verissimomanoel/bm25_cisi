@@ -22,6 +22,12 @@ He wrote the code, but there are some problems with the implementation, as descr
 * The function that evaluates the system searches for some ids that exist in the queries array and doesn't exist in the evaluation array.
 * The code doesn't generate a function to read and process the data.
 
+All functions are documented using pydocs. Then all implementation details are in the code.
 
-**TODO**
-Wrote about MRR10
+In the end, the system was evaluated using the mean of metrics precision, recall, and F1 of all queries, and the results are below:
+
+* Precision = **0.2276**
+* Recall = **0.0929**
+* F1 = **0.1320**
+
+It also evaluated the mean reciprocal rank and BM25Ok with the library rank_bm25. The result of this metric was **0.4187**.
